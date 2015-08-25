@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-<html>
-  <head lang="en">
-    <meta charet="UTF-8">
-    <title>Sample Angular App</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Collagify</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/app.css">
   </head>
-  <body ng-app="superhero">
-    <input type="text" ng-model="message"/>
-    <superman data-message="message"></superman>
+  <body ng-app="collage">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Collagify</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="page-header">
+        <h1>Build the workspace here.</h1>
+      </div>
+      <input type="text" ng-model="message"/>
+      <superman data-message="message"></superman>
+    </div>
+
+    <div class="gallery">
+      <div class="container">
+        <p class="text-muted">Build the image gallery here.</p>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="superman-directive.js"></script>
+    <script type="text/javascript" src="app.js"></script>
   </body>
-  <script type="text/javascript"
-          src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js">
-  </script>
-  <script type="text/javascript" src="superman-directive.js"></script>
-  <script type="text/javascript" src="app.js"></script>
 </html>

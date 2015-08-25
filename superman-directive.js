@@ -11,5 +11,5 @@ var supermanDirective = function() {
     controller: supermanCtrl,
     controllerAs: 'smCtrl',
     bindToController: true
-  };  
+  };
 };
