@@ -19,23 +19,22 @@
     </nav>
 
     <div class="container">
-      <div class="page-header">
-        <h1>Build the workspace here.</h1>
-      </div>
-      <input type="text" ng-model="message"/>
-      <superman data-message="message"></superman>
+      <workspace></workspace>
     </div>
 
     <div class="gallery">
       <div class="container">
-        <p class="text-muted">Build the image gallery here.</p>
+        <gallery></gallery>
       </div>
     </div>
 
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/angular.js"></script>
-    <script type="text/javascript" src="superman-directive.js"></script>
+    <script type="text/javascript" src="js/angular-dragdrop.js"></script>
+    <script type="text/javascript" src="gallery-directive.js"></script>
+    <script type="text/javascript" src="workspace-directive.js"></script>
     <script type="text/javascript" src="app.js"></script>
   </body>
 </html>

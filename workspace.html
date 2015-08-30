@@ -1,0 +1,12 @@
+<div class="well workspace"
+     data-drop="true"
+     ng-model="wsCtrl.images"
+     data-jqyoui-options="{multiple: true}"
+     jqyoui-droppable="{onDrop: 'wsCtrl.dropImage()'}">
+  <img src="{{image}}" class="collage-image"
+     ng-repeat="image in wsCtrl.images track by $index"
+     data-drag="true"
+     ng-model="wsCtrl.images"
+     data-jqyoui-options="{containment: 'parent'}"
+     jqyoui-draggable="{index: {{$index}}, animate: true}"/>
+</div>

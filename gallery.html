@@ -1,0 +1,7 @@
+<img src="{{image}}"
+     ng-repeat="image in glCtrl.images track by $index"
+     class="thumbnail-image"
+     data-drag="true"
+     ng-model="glCtrl.images"
+     data-jqyoui-options="{revert: 'invalid'}"
+     jqyoui-draggable="{index: {{$index}}, animate:true}"/>
