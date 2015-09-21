@@ -1,5 +1,4 @@
-/* Sticky footer styles
--------------------------------------------------- */
+
 html {
   position: relative;
   min-height: 100%;
@@ -17,11 +16,6 @@ body {
   background-color: #f5f5f5;
 }
 
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
 body > .container {
   padding: 60px 15px 0;
 }
@@ -34,16 +28,12 @@ body > .container {
   padding-left: 15px;
 }
 
-code {
-  font-size: 80%;
-}
-
 .thumbnail-image {
   height: 15vh;
   width: 15%;
   margin: 1%;
 }
 
-.workspace {
-  height: 70vh;
+#workspaceCanvas {
+  background-color: lightgrey;
 }
