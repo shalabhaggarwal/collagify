@@ -21,7 +21,7 @@ workspaceCtrl.prototype.onKeyDownHandler = function(event) {
   var element = document.getElementById("workspaceCanvas");
   var canvas = element.fabric;
   switch (event.keyCode) {
-    case 46: // delete
+    case 46: // dele
     case 8: // backspace (Mac has only one key)
       event.preventDefault();
       var activeImage = canvas.getActiveObject();

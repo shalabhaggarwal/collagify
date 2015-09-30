@@ -5,6 +5,7 @@ var galleryCtrl = function($scope) {
 
   document.body.addEventListener("imageDeleted", function (event) {
     this.images.push(event.detail.imageDeleted);
+    $scope.$apply();
   }.bind(this));
 };
 
